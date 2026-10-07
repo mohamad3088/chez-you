@@ -17,4 +17,4 @@ Klanten kunnen deze zaak nu niet eens bellen. Een website plus een telefoonnumme
 - [ ] Instagram/TikTok, als ze die hebben
 
 ## Design
-Parijse bistro: een gestreepte luifel in marine en crème, rood accent, een krijtbord-menu ("La carte") en ticket-vormige reviews. Gloock + Karla + Caveat.
+Premium donker (zelfde stijl als MG Barbershop): bijna-zwarte achtergrond, Bodoni Moda + Manrope, een eigen accentkleur en een monogram-logo (`img/logo-*.svg`). Diensten, prijzen en uren staan bovenaan `script.js`.

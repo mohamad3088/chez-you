@@ -5,122 +5,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chez You — Barbershop in Leuven · Brusselsestraat 70</title>
   <meta name="description" content="Chez You Barbershop, Brusselsestraat 70 in Leuven. Fades, moderne haircuts en baardverzorging — 7 dagen op 7 open, gewoon binnenlopen. 4,9★ op Google.">
-  <meta name="theme-color" content="#1b2a4a">
-  <meta property="og:title" content="Chez You — Barbershop Leuven">
-  <meta property="og:description" content="Stijl, vakmanschap en persoonlijke aandacht. Brusselsestraat 70, elke dag open.">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0d0c0a">
+  <meta property="og:title" content="Chez You – Barbershop — Leuven">
+  <meta property="og:description" content="Chez You Barbershop, Brusselsestraat 70 in Leuven. Fades, moderne haircuts en baardverzorging — 7 dagen op 7 open, gewoon binnenlopen. 4,9★ op Google.">
+  
+  <link rel="icon" href="img/logo-dark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BarberShop",
-    "name": "Chez You - Barbershop",
-    "address": {"@type": "PostalAddress","streetAddress": "Brusselsestraat 70","postalCode": "3000","addressLocality": "Leuven","addressCountry": "BE"},
-    "geo": {"@type": "GeoCoordinates","latitude": 50.8803387,"longitude": 4.6969086},
-    "openingHours": "Mo-Su 09:30-19:00",
-    "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.9","reviewCount": "25"}
-  }
-  </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BarberShop", "name": "Chez You – Barbershop", "address": {"@type": "PostalAddress", "streetAddress": "Brusselsestraat 70", "postalCode": "3000", "addressLocality": "Leuven", "addressCountry": "BE"}, "geo": {"@type": "GeoCoordinates", "latitude": 50.8803387, "longitude": 4.6969086}, "openingHours": "Mo-Su 09:30-19:00", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "25"}}</script>
 </head>
 <body>
 
-<div class="awning" aria-hidden="true"></div>
-
-<header class="nav">
-  <a href="#top" class="logo">Chez <em>You</em></a>
-  <nav class="nav__links">
-    <a href="#carte">La carte</a>
-    <a href="#avis">Avis</a>
-    <a href="#adresse">Adresse</a>
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand" aria-label="Chez You – Barbershop — naar boven">
+    <img src="img/logo-cream.svg" alt="" class="nav__logo">
+    <span>Chez <em>You</em></span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#over">Over ons</a>
+    <a href="#diensten">Diensten</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#bezoek">Bezoek</a>
   </nav>
+  <a href="#bezoek" class="btn btn--gold nav__cta">Kom langs</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false"><span></span><span></span></button>
 </header>
 
 <main id="top">
 
-  <section class="hero">
-    <p class="hero__est">Barbershop · Leuven</p>
-    <h1><span class="h1__chez">Chez</span><span class="h1__you">You</span></h1>
-    <p class="hero__script">bienvenue — welkom — welcome</p>
-    <p class="hero__lead">Bij Chez You draait alles om <strong>stijl</strong>, <strong>vakmanschap</strong> en <strong>persoonlijke aandacht</strong>. Van een strakke fade tot een perfect getrimde baard: je stapt verzorgd weer naar buiten.</p>
-    <div class="hero__sign">
-      <span class="sign__dot" data-dot></span>
-      <span data-status>Brusselsestraat 70 · elke dag open</span>
+  <!-- HERO -->
+  <section class="hero hero--type">
+    <div class="hero__media hero__media--type" aria-hidden="true">
+      <img src="img/logo-accent.svg" alt="" class="hero__mark">
     </div>
-    <a href="#adresse" class="btn">Loop gerust binnen →</a>
-  </section>
-
-  <section class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>Fade</span><i>✂</i><span>Haircut</span><i>✂</i><span>Baard</span><i>✂</i><span>Lijnen</span><i>✂</i><span>Styling</span><i>✂</i>
-      <span>Fade</span><i>✂</i><span>Haircut</span><i>✂</i><span>Baard</span><i>✂</i><span>Lijnen</span><i>✂</i><span>Styling</span><i>✂</i>
-    </div>
-  </section>
-
-  <!-- LA CARTE -->
-  <section class="carte" id="carte">
-    <div class="board reveal">
-      <p class="board__top">La carte</p>
-      <h2>Ce que nous faisons</h2>
-      <p class="board__sub">— wat we voor je doen —</p>
-      <ul class="board__list">
-        <li><span>Strakke fade</span><small>low · mid · high · skin</small></li>
-        <li><span>Moderne haircut</span><small>schaar &amp; tondeuse, op maat</small></li>
-        <li><span>Baard trimmen</span><small>in model gebracht</small></li>
-        <li><span>Contouren &amp; lijnen</span><small>scherp afgewerkt</small></li>
-        <li><span>Styling</span><small>met de juiste producten</small></li>
-      </ul>
-      <p class="board__note">Prix sur demande · vraag naar de prijs in de zaak</p>
-    </div>
-    <aside class="carte__side reveal">
-      <div class="plate">
-        <b>7/7</b>
-        <span>ouvert tous les jours</span>
-        <small>09:30 – 19:00</small>
+    <div class="hero__content">
+      <p class="eyebrow"><span class="status" data-status>Brusselsestraat 70 · Leuven</span></p>
+      <h1 class="hero__title">Stijl, vakmanschap &amp;<br><em>persoonlijke aandacht.</em></h1>
+      <p class="hero__lead">Van een strakke fade tot een perfect getrimde baard: bij Chez You stap je verzorgd weer naar buiten. Elke dag open — gewoon binnenlopen.</p>
+      <div class="hero__actions">
+        <a href="#bezoek" class="btn btn--gold">Loop gerust binnen</a>
+        <a href="#diensten" class="btn btn--ghost">Bekijk diensten</a>
       </div>
-      <div class="plate plate--red">
-        <b>4,9</b>
-        <span>★★★★★ sur Google</span>
-        <small>25 avis</small>
+      <div class="hero__proof">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p><strong>4,9</strong> op Google · <span>25 reviews</span></p>
       </div>
-    </aside>
+    </div>
+    <a href="#over" class="hero__scroll" aria-label="Scroll naar beneden"><span></span></a>
   </section>
 
-  <!-- AVIS -->
-  <section class="avis" id="avis">
-    <h2 class="sec-title">Les <em>avis</em></h2>
-    <div class="tickets">
-      <figure class="ticket reveal"><blockquote>“Top kapper. Altijd super vriendelijk en heel goed geknipt!”</blockquote><figcaption>— Jelle J.</figcaption></figure>
-      <figure class="ticket reveal"><blockquote>“Super vriendelijk! Snel geholpen. Wij komen steeds terug!”</blockquote><figcaption>— Valerie</figcaption></figure>
-      <figure class="ticket reveal"><blockquote>“Zeer tevreden. En zeer vriendelijk. Aanrader.”</blockquote><figcaption>— Steve N.</figcaption></figure>
+  <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Fade</span><i>✦</i><span>Moderne haircut</span><i>✦</i><span>Baard</span><i>✦</i><span>Contouren</span><i>✦</i><span>Styling</span><i>✦</i><span>Elke dag open</span><i>✦</i><span>Fade</span><i>✦</i><span>Moderne haircut</span><i>✦</i><span>Baard</span><i>✦</i><span>Contouren</span><i>✦</i><span>Styling</span><i>✦</i><span>Elke dag open</span><i>✦</i></div></div>
+
+  <!-- OVER -->
+  <section class="section about" id="over">
+    <div class="about__plate reveal">
+      <img src="img/logo-accent.svg" alt="Chez You – Barbershop logo" class="about__plate-logo">
+      <ul class="plate__facts"><li><b>4,9</b><span>Google</span></li><li><b>7/7</b><span>open</span></li><li><b>0</b><span>afspraak nodig</span></li></ul>
+    </div>
+    <div class="about__text reveal">
+      <p class="eyebrow">Over Chez You</p>
+      <h2>Welkom <em>chez you</em>.</h2>
+      <p>Bij Chez You draait alles om stijl, vakmanschap en persoonlijke aandacht. Je zegt wat je wil, wij zorgen dat het zit.</p>
+      <p>Midden in de Brusselsestraat, zeven dagen per week open van 9u30 tot 19u.</p>
+      <ul class="stats"><li><strong>4,9</strong><span>Google-score</span></li><li><strong>25</strong><span>reviews</span></li><li><strong>7/7</strong><span>dagen open</span></li></ul>
     </div>
   </section>
 
-  <!-- ADRESSE -->
-  <section class="adresse" id="adresse">
-    <div class="adresse__card reveal">
-      <h2 class="sec-title">L'<em>adresse</em></h2>
-      <p class="street">Brusselsestraat 70<br>3000 Leuven</p>
-      <p class="now" data-status-box><span class="dot"></span><span data-status-text>…</span></p>
-      <p class="hours">Maandag t/m zondag · 09:30 – 19:00<br><span>Geen afspraak nodig — gewoon binnenlopen.</span></p>
-      <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Chez+You+Barbershop+Brusselsestraat+70+3000+Leuven" target="_blank" rel="noopener">Route plannen →</a>
+  <!-- DIENSTEN -->
+  <section class="section services" id="diensten">
+    <div class="section__head reveal">
+      <p class="eyebrow">Diensten &amp; prijzen</p>
+      <h2>Alles voor <em>haar &amp; baard</em>.</h2>
+      <p class="muted">Geen afspraak nodig.</p>
     </div>
-    <div class="adresse__map reveal">
-      <iframe title="Kaart Chez You" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?q=Chez%20You%20Barbershop%2C%20Brusselsestraat%2070%2C%203000%20Leuven&z=16&output=embed"></iframe>
+    <div class="menu reveal" id="priceList"></div>
+    <p class="menu__note muted">Vraag naar de prijs in de zaak.</p>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews" id="reviews">
+    <div class="section__head reveal">
+      <p class="eyebrow">Wat klanten zeggen</p>
+      <h2><span class="big">4,9</span> uit <em>25 reviews</em></h2>
     </div>
+    <div class="quotes">
+      <figure class="quote reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Top kapper. Altijd super vriendelijk en heel goed geknipt!”</blockquote>
+        <figcaption>Jelle J. · Google</figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Super vriendelijk! Snel geholpen. Wij komen steeds terug!”</blockquote>
+        <figcaption>Valerie · Google</figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Zeer tevreden. En zeer vriendelijk. Aanrader.”</blockquote>
+        <figcaption>Steve N. · Google</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- BEZOEK -->
+  <section class="section visit" id="bezoek">
+    <div class="visit__info reveal">
+      <p class="eyebrow">Bezoek ons</p>
+      <h2>Brusselsestraat <em>70</em></h2>
+      <p class="muted">3000 Leuven — elke dag 09:30–19:00, geen afspraak nodig.</p>
+      <div class="open-now" data-status-box><span class="dot"></span><span data-status-text>Openingsuren laden…</span></div>
+      <table class="hours" id="hours"></table>
+      <div class="visit__actions"><a href="https://www.google.com/maps/dir/?api=1&destination=Chez+You+Barbershop+Brusselsestraat+70+3000+Leuven" target="_blank" rel="noopener" class="btn btn--ghost">Route plannen</a></div>
+    </div>
+    <div class="visit__map reveal">
+      <iframe title="Kaart Chez You – Barbershop" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Chez+You+Barbershop+Brusselsestraat+70+3000+Leuven&z=16&output=embed"></iframe>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <img src="img/logo-accent.svg" alt="" class="cta__logo">
+    <h2>Loop gerust <em>binnen</em>.</h2>
+    <p>Elke dag van 9u30 tot 19u.</p>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Chez+You+Barbershop+Brusselsestraat+70+3000+Leuven" target="_blank" rel="noopener" class="btn btn--gold btn--lg">Route plannen</a>
   </section>
 </main>
 
 <footer class="footer">
-  <p class="logo logo--foot">Chez <em>You</em></p>
-  <p>Brusselsestraat 70 · 3000 Leuven · elke dag 09:30 – 19:00</p>
-  <p class="small">© <span id="year"></span> Chez You – Barbershop</p>
+  <div class="footer__brand">
+    <img src="img/logo-cream.svg" alt="" class="footer__logo">
+    <p>Chez You – Barbershop<br><span class="muted">Brusselsestraat 70, 3000 Leuven</span></p>
+  </div>
+  <div class="footer__links"><a href="https://www.google.com/maps/search/?api=1&query=Chez+You+Barbershop+Brusselsestraat+70+3000+Leuven" target="_blank" rel="noopener">Google Maps</a></div>
+  <p class="footer__copy muted">© <span id="year"></span> Chez You – Barbershop</p>
 </footer>
 
-<a href="#adresse" class="fab">Elke dag open · loop binnen</a>
+<a href="https://www.google.com/maps/dir/?api=1&destination=Chez+You+Barbershop+Brusselsestraat+70+3000+Leuven" target="_blank" rel="noopener" class="fab"><span>Route</span></a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Sluiten">×</button>
+  <button class="lightbox__nav lightbox__prev" aria-label="Vorige">‹</button>
+  <img alt="">
+  <button class="lightbox__nav lightbox__next" aria-label="Volgende">›</button>
+</div>
 
 <script src="script.js"></script>
 </body>
